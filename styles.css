@@ -11,6 +11,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     width: 100%;
     height: 56px; /* Ajusta según tus necesidades */
     background-color: #1F2124; /* Cambia si usas modo oscuro */
@@ -24,7 +25,6 @@ nav {
 .principal-title{
     font-weight: bold;
     color: white; 
-    margin-left: 80px;
     margin-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -33,32 +33,127 @@ nav {
 .container-menu{
     display: flex;
     align-items: center;
-    gap: 35px; /* Espacio entre los elementos del menú */
-    margin-right: 70px;
+    gap: 30px; 
+    margin-right: 150px;
     margin-top: 20px;
 }
 
-    
-.container-menu input[type="search"] {
+  
+.datosPersonales {
+  margin-left: 50px;
+}
+.datosPersonales input[type="search"] {
     outline: none;
     padding: 8px 16px;
-    border-radius: 9999px; /* Hace el input completamente redondo */
-    border: 1px solid #ccc; /* Añade un borde gris claro */
+    border-radius: 9999px; 
+    border: 1px solid #ccc; 
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s, width 0.3s;
   }
+  .ButtonSpecialTwo {
+    
+    background-color: #1F2124;
+    border-radius: 1px solid;
+    color: aliceblue;
+    border: 2px solid rgb(53, 83, 46);
+  }
+  .datosPersonales button {
+    width: 200px;
+    height: 40px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+ 
+
+  /*SEGUNDA SECCIÓN*/
 
   .New-Section {
     padding: 50px;
   }
-
-  /*SEGUNDA SECCIÓN*/
-
-  .grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  /*Buttons*/
+  .buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
   }
-  .grilla img {
+  .ButtoEasy {
+    background-color: #3e3f41;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    padding: 7px;
+  }
+  .ButtonSpecial {
+    background-color: rgb(125, 169, 122);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 7px;
+  }
+  button:hover {
+    background-color: aliceblue;
+  }
+  /*SecondTitle*/
+  .SecondTitle {
+    color: aliceblue;
+    margin-top: 50px;
+  }
+  /*GrillaPeliculas*/
+  .containerGrilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+  }
+ 
+  .grilla {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);  
+    width: 50%; 
+    height: 100vh;
+    gap: 10px;
+  }
+
+  .grilla img {
+    width: 100%;
+    height: auto;
+    
+  }
+ 
+  /*Buscador*/
+  .background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  
+  }
+
+  .background input {
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+
+  }
+  input::placeholder{
+    text-align: center;
+    color: #3e3f41;
+    font-size: larger;
+  }
+  
+  .background h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .TitulosColor {
+    color: rgb(88, 192, 62);
   }
